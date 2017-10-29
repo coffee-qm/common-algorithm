@@ -2,12 +2,18 @@ package com.coffee.common.algorithm.sort.impl;
 
 import com.coffee.common.algorithm.sort.Sort;
 
+/**
+ * 归并排序
+ * 
+ * @author QM
+ */
 public class MergeSort extends Sort {
 
 	@Override
 	public void sort(final int[] arr) {
 		final int[] tmp = new int[arr.length];
-		sort(arr, 0, arr.length - 1, tmp);
+		//
+		this.sort(arr, 0, arr.length - 1, tmp);
 	}
 
 	private void sort(final int[] arr, final int left, final int right,
@@ -18,6 +24,7 @@ public class MergeSort extends Sort {
 			sort(arr, left, mid, tmp);
 			//
 			sort(arr, mid + 1, right, tmp);
+			//
 			merge(arr, left, mid, right, tmp);
 		}
 	}

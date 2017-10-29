@@ -3,6 +3,8 @@ package com.coffee.common.algorithm.sort.impl;
 import com.coffee.common.algorithm.sort.Sort;
 
 /**
+ * 堆排序
+ * 
  * @author QM
  */
 public class HeapSort extends Sort {
