@@ -12,6 +12,11 @@ import com.coffee.common.algorithm.sort.impl.QuickSort;
 import com.coffee.common.algorithm.sort.impl.SelectSort;
 import com.coffee.common.algorithm.sort.impl.ShellSort;
 
+/**
+ * 排序测试
+ * 
+ * @author QM
+ */
 public class SortTest {
 	private int[] getArr() {
 		final int[] arr = { 9, 1, 4, 10, 123, 2, 598, 34, 18, 22 };
