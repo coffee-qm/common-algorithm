@@ -1,13 +1,13 @@
 package com.coffee.common.algorithm.sort.impl;
 
-import com.coffee.common.algorithm.sort.Sort;
+import com.coffee.common.algorithm.sort.AbstractSort;
 
 /**
  * 快速排序
  * 
  * @author QM
  */
-public class QuickSort extends Sort {
+public class QuickSort extends AbstractSort {
 	@Override
 	public void sort(final int[] arr) {
 		sort(arr, 0, arr.length - 1);
